@@ -1,0 +1,96 @@
+
+/* 全体設定 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  background-color: #ffffff;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+/* LP全体 */
+.landing-page {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* 画像セクション */
+.image-section {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+
+/* 画像 */
+.image-section img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+/* クリック可能な画像 */
+.image-section a {
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* ボタン画像のタップ時 */
+.image-section a:active {
+  opacity: 0.9;
+}
+
+/* PC表示 */
+@media screen and (min-width: 768px) {
+  .landing-page {
+    max-width: 750px;
+  }
+}
+
+/* スマートフォン表示 */
+@media screen and (max-width: 767px) {
+  .landing-page {
+    width: 100%;
+  }
+}
+.line-ad {
+  position: relative;
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.line-ad img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.fortune-button {
+  position: absolute;
+
+  /* ボタンの位置に合わせて調整 */
+  left: 25%;
+  top: 75%;
+  width: 50%;
+  height: 12%;
+
+  display: block;
+  cursor: pointer;
+  z-index: 2;
+}
